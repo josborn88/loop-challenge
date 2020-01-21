@@ -3,11 +3,32 @@
 Assumptions: That this was an internal use site, but really that wouldn’t change my approach to much I think. I also assumed that the brewer specific details such as brew temperature, malt ratios, ect were not needed.
 
 
-Overall I am happy enough with my work. I accomplished the main goal and got both stretch goals working.
+Overall I am happy enough with my work. I accomplished the main goal and got both stretch goals working. There are certainly things that could be better, and I have a few ideas to make them so, and had I taken a couple extra hours I think I could get many of them fixed. 
 
-I prioritized functionality over looks, and planned to use any leftover time to make it look better. My reasoning is I would rather have a site that worked well and looked bad than a beautiful paining of a site.
+Or if I was to redo this again, not that I have more experience and reawakened some of my knowledge, or been quicker to message the team. The tools were set up for me to use but I took the easy way out and didn’t use them. I had reasons, but now that I’m thinking about it a mixture of pride and impostor's syndrome likely caused me not to get as far as I could have.
 
-A few things I would change if I had not tun our of time:
+Process:
+I prioritized functionality over looks, and planned to use any leftover time to make it look better. My reasoning is I would rather have a site that worked well and looked bad than a beautiful site that had no function.
+
+I started by looking over the API documentation and making a few requests in Postman to learn what I was working with. After looking at how the data was setup and how I could use it I did a crude drawing of a layout. And quickly made a prototype to get data flowing. From there is was mostly refining the functions and figuring out how to add the information I needed to a request to get an individual beer.
+
+Things that were hard:
+The hardest part was learning to use the router-link correctly to pass and get he information I wanted between the main component and the individual beer component. I still don’t feel like I did this the best way either. I imagine there is a way to use props to pass the information around, but I wasn’t sure the right way to ask the question to google and was having trouble getting the slack channel setup so I decided that for this project I would focus on the site rather than learning to use a new tool. Were I to do this as part of a team I would have just asked a more experienced developer..
+
+Once I got the router link working correctly I was able to modify it for the search by name function.
+
+Things I Like:
+I like that there are not many parts. There are only a few components, each component is built to do one job, and it does it well enough.
+
+I like my use of a for loop for the navigation buttons at the end of the main page. I thought about just copy pasting the buttons, but knew there had to be a better way.
+
+I like the idea of the layout even if some of the actual styling could be better.
+
+I like that I took some time to look through documentation for the API and for Vue and could use it to figure out how to solve some of my problems. The router link issue is a good example of this. I tried things like stack overflow but I was still having trouble so I looked at Vue’s docs and was able to play with the code from there and got something to work.
+
+
+Things to change:
+A few things I would change if I had not run out of time:
 I would combine the beer by name and the beer by id functionality into one component. I think that a simple if else statement to choose between the two functions would do it nicely.
 
 Navigation:
@@ -24,7 +45,13 @@ I also thought about how I could just pass the beer object to the beer component
  Better names:
 Overall my names are decent but I don’t like the component names. I would rename them to be more explicit and descriptive.
 
+Fewer Beers per page, and page numbers
+Pretty much that
+
+Search function works when pressing enter
+Again, what it says. I should be able to do that using v:on prevents and an input submit, I’m guessing.
+
 Style: 
 I would like to have had more time to make it look better, and to intentionally look at how responsive the site is. Given the use case I would expect people to use it on their phones, and it look terrible there now. It kind of works, but is gross.
 
-What would I change ofr mobile? Get rid of the picture and free up that real estate. I would include the beer tagline or part of the description and have a click to expand to view the rest.
+What would I change for mobile? Get rid of the picture and free up that real estate. I would include the beer tagline or part of the description and have a click to expand to view the rest.
