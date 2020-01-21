@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       beer: [],
-      beerId: 1
+      beerName: "Buzz"
     };
   },
   computed: {
@@ -37,8 +37,8 @@ export default {
     }
   },
   methods: {
-    getBeer(num) {
-      fetch(`https://api.punkapi.com/v2/beers/${num}`, {
+    getBeer(name) {
+      fetch(`https://api.punkapi.com/v2/beers?beer_name=${name}`, {
         headers: {}
       })
         .then(response => {
