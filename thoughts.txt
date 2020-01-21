@@ -1,0 +1,30 @@
+﻿Loop Project Thoughts
+
+Assumptions: That this was an internal use site, but really that wouldn’t change my approach to much I think. I also assumed that the brewer specific details such as brew temperature, malt ratios, ect were not needed.
+
+
+Overall I am happy enough with my work. I accomplished the main goal and got both stretch goals working.
+
+I prioritized functionality over looks, and planned to use any leftover time to make it look better. My reasoning is I would rather have a site that worked well and looked bad than a beautiful paining of a site.
+
+A few things I would change if I had not tun our of time:
+I would combine the beer by name and the beer by id functionality into one component. I think that a simple if else statement to choose between the two functions would do it nicely.
+
+Navigation:
+I would add a return to home button on the single beer display page. I would also like to implement a next and previous button on the beer by id page. 
+
+Use For Loop inside the Beer component:
+I would also change how single beer component displays things. Specifically by using a loop like the viewBeers component uses. I started by not using a loop because when using the beer’s ID to get info I knew I would only get one beer, so I used the beer’s index to grab it’s info. 
+
+Once I implemented the search function though I don’t like that because it’s a fuzzy search that could return multiple items. If I used a for loop that would be no issue, and if I were to combine the id and name functions it would not harm the id display.
+
+Pass Beer as Object:
+I also thought about how I could just pass the beer object to the beer component when looking up extra information about the beer. That would save a lot of API calls were many people using this site at once, it should also be faster for the user.
+
+ Better names:
+Overall my names are decent but I don’t like the component names. I would rename them to be more explicit and descriptive.
+
+Style: 
+I would like to have had more time to make it look better, and to intentionally look at how responsive the site is. Given the use case I would expect people to use it on their phones, and it look terrible there now. It kind of works, but is gross.
+
+What would I change ofr mobile? Get rid of the picture and free up that real estate. I would include the beer tagline or part of the description and have a click to expand to view the rest.
